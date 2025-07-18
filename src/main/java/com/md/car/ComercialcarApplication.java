@@ -2,19 +2,26 @@ package com.md.car;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+
+//import com.md.car.security.SpringSecurityAuditorAware;
+
 
 @SpringBootApplication
-@RestController
+//@EnableJpaAuditing(auditorAwareRef = "auditorAware")
 public class ComercialcarApplication {
+	
+	
+/*	@Bean
+	public AuditorAware<String> auditorAware() {
+		return new SpringSecurityAuditorAware();
+	} 
+	
+	@Bean
+	public JavaMailSender emailSender() {
+		return new JavaMailSenderImpl();
+	} */
 
 	public static void main(String[] args) {
 		SpringApplication.run(ComercialcarApplication.class, args);
-	}
-
-	@GetMapping("/")
-	public String welcome() {
-		return "Welcome to my world....";
 	}
 }
