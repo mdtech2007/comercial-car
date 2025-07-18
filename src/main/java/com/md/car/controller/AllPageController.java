@@ -23,12 +23,12 @@ public class AllPageController {
 
 	@GetMapping("/hr")
 	public String hr() {
-		return "/hr/index";
+		return "hrindex";
 	}
 
 	@GetMapping("/fleet")
 	public String fleet() {
-		return "/fleet/index";
+		return "fleet/index";
 	}
 
 	@GetMapping("/accounts")
