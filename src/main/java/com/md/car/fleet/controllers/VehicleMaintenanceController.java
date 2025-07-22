@@ -31,13 +31,13 @@ public class VehicleMaintenanceController {
 	@GetMapping("/fleet/maintenances")
 	public String findAll(Model model){		
 		model.addAttribute("maintenances", vehicleMaintenanceService.findAll());
-		return "/fleet/maintenances";
+		return "fleet/maintenances";
 	}
 
 	@GetMapping("/fleet/maintenanceAdd")
 	public String addMaintenance(Model model){
 		addModelAttributes(model);
-		return "/fleet/maintenanceAdd";
+		return "fleet/maintenanceAdd";
 	}
 
 	@GetMapping("/fleet/maintenance/{op}/{id}")

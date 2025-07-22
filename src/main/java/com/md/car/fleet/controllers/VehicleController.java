@@ -44,7 +44,7 @@ public class VehicleController {
 	@GetMapping("/fleet/vehicles")
 	public String findAll(Model model){		
 		addModelAttributes(model);
-		return "/fleet/vehicles";
+		return "fleet/vehicles";
 	}
 
 	@GetMapping("/fleet/vehicleAdd")

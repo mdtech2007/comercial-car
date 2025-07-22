@@ -23,7 +23,7 @@ public class AllPageController {
 
 	@GetMapping("/hr")
 	public String hr() {
-		return "hrindex";
+		return "hr/index";
 	}
 
 	@GetMapping("/fleet")
@@ -33,32 +33,32 @@ public class AllPageController {
 
 	@GetMapping("/accounts")
 	public String accounts() {
-		return "/accounts/index";
+		return "accounts/index";
 	}
 
 	@GetMapping("/payroll")
 	public String payroll() {
-		return "/payroll/index";
+		return "payroll/index";
 	}
 
 	@GetMapping("/helpdesk")
 	public String helpdesk() {
-		return "/helpdesk/index";
+		return "helpdesk/index";
 	}
 
 	@GetMapping("/parameters")
 	public String parameters() {
-		return "/parameters/index";
+		return "parameters/index";
 	}
 
 	@GetMapping("/reports")
 	public String reports() {
-		return "/reports/index";
+		return "reports/index";
 	}
 
 	@GetMapping("/security")
 	public String security() {
-		return "/security/index";
+		return "security/index";
 	}
 
 }

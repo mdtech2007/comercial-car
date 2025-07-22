@@ -24,7 +24,7 @@ public class InvoiceStatusController {
 	@GetMapping("/accounts/invoiceStatuses")
 	public String findAll(Model model){		
 		model.addAttribute("invoiceStatuses", invoiceStatusService.findAll());
-		return "/accounts/invoiceStatuses";
+		return "accounts/invoiceStatuses";
 	}	
 	
 	@RequestMapping("/accounts/invoiceStatus/{id}")

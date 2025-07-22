@@ -37,7 +37,7 @@ public class VehicleMovementController {
 	@GetMapping("/fleet/movementAdd")
 	public String addMovement(Model model){
 		addModelAttributes(model);
-		return "/fleet/movementAdd";
+		return "fleet/movementAdd";
 	}
 
 	@GetMapping("/fleet/movement/{op}/{id}")

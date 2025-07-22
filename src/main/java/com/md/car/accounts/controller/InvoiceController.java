@@ -30,7 +30,7 @@ public class InvoiceController {
 	public String  getAll(Model model){
 		List<Invoice> invoices =   invoiceService.findAll();
 		model.addAttribute("invoices", invoices);
-		return "/accounts/invoices";
+		return "accounts/invoices";
 	}
 
 	@GetMapping("/accounts/invoiceAdd")

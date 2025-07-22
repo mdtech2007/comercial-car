@@ -25,7 +25,7 @@ public class TransactionStatusController {
     public String parameters(Model model){
         List<TransactionStatus> transactionStatuses = transactionStatusService.findAll();
         model.addAttribute("transactionStatuses", transactionStatuses);
-        return "/accounts/transactionStatuses";
+        return "accounts/transactionStatuses";
     }
 
     //Get Job Title by id

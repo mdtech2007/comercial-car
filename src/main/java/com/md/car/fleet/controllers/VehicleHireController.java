@@ -34,13 +34,13 @@ public class VehicleHireController {
 	@GetMapping("/fleet/hires")
 	public String findAll(Model model){		
 		model.addAttribute("hires", vehicleHireService.findAll());
-		return "/fleet/hires";
+		return "fleet/hires";
 	}
 
 	@GetMapping("/fleet/hireAdd")
 	public String addHire(Model model){
 		addModelAttributes(model);
-		return "/fleet/hireAdd";
+		return "fleet/hireAdd";
 	}
 
 	@GetMapping("/fleet/hire/{op}/{id}")

@@ -53,7 +53,7 @@ public class TransactionController {
         List<Transaction> transactions =   transactionService.findAll();
         model.addAttribute("transactions", transactions);
         addModelAttributes(model);
-        return "/accounts/transactions";
+        return "accounts/transactions";
     }
 
     @GetMapping("/accounts/transactionAdd")

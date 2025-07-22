@@ -24,7 +24,7 @@ public class VehicleTypeController {
 	@GetMapping("/fleet/vehicleTypes")
 	public String findAll(Model model){
 		model.addAttribute("vehicleTypes", vehicleTypeService.findAll());
-		return "/fleet/vehicleTypes";
+		return "fleet/vehicleTypes";
 	}
 
 	@RequestMapping("/fleet/vehicleType/{id}")
