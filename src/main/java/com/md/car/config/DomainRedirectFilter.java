@@ -2,7 +2,7 @@ package com.md.car.config;
 
 import java.io.IOException;
 
-import org.springframework.stereotype.Component;
+/*import org.springframework.stereotype.Component;
 
 import jakarta.servlet.Filter;
 import jakarta.servlet.FilterChain;
@@ -35,5 +35,5 @@ if ("benzaiten.co.in".equalsIgnoreCase(host)) {
 
         chain.doFilter(request, response);
     }
-}
+} */
 
